@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet"> 
+
+    <title>A1: Cardboard Press-fit Puzzle</title>
+  </head>
+  <body>
+	
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="./">UW HCDE598 SP19 Assignments</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav">
+						<!-- <a class="nav-item nav-link active" href="./">Home <span class="sr-only">(current)</span></a> -->
+						<a class="nav-item nav-link" href="A1.html">A1: Laser Cut Press Fit Construction Kit</a>
+						<a class="nav-item nav-link" href="A2.html">A2: CAD model + fabricated output!</a>
+						<a class="nav-item nav-link" href="A3.html">A3: TBD</a>
+						<a class="nav-item nav-link" href="A4.html">A4: TBD</a>
+						<a class="nav-item nav-link" href="A5.html">A5: TBD</a>
+						<a class="nav-item nav-link" href="A6.html">A6: TBD</a>
+						<a class="nav-item nav-link" href="A7.html">A7: TBD</a>
+						<!-- <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+				  	</div>
+				</div>
+		</nav>
+		<div class="row">
+			<div class="col">
+			</div>
+
+			<div class="col-9">
+				<div class="display-1">
+					<p style="font-family: 'Abril Fatface', cursive;">A2: CAD model + fabricated output = Parametric Awesomeness</p>
+				</div>
+				<div id="content">
+					<p>
+                        This week's assignment was to use a parametric approach to designing a press-fit kit. 
+                    </P>
+                    <p>
+                        As I started using Rhinoceros (and Grasshopper), I realized there would be a bit of maths involved:
+					</p>
+					<p>
+						<img src="https://media.giphy.com/media/roFzSY4eMYGJi/giphy.gif" alt="Cat jumping with math overlays">
+					</p>
+					<p>
+						The first thing I did was to re-create the basic components that I created in Illustrator for the last assignment and add some basic parameters for adjustment. 
+					</p>
+					<p>
+						This was the non-parametrized re-creation of the main piece of the kit: 
+					</p>
+					<P>
+						<img src="A2-assets/A2-rhinoIteration.png" alt="Vectors of the main kit piece rendered in Rhino">
+					</P>
+					<p>
+						After adding some parametrization for the component, I made the sides flexible:
+					</p>
+					<P>
+						<img src="A2-assets/A2-Kapture 2019-04-19 at 22.53.30.gif" alt="Circles changing size using a slider in Grasshopper">
+					</P>
+					<p>
+						I kept the settings constant throughout the process. 
+
+						Given the careless design of this first discs, I realized that they did not account for the width of the cardboard itself, and therefore could not be assembled together.
+						
+						I used calipers to measure the cardboard width: 
+					</p>
+					<P>
+						<img src="A1-assets/A1-03.jpg" alt="Measuring cardboard piece with calipers" width="500">
+					</p>
+					<P>
+						<img src="A1-assets/A1-04.jpg" alt="Measuring cardboard piece with calipers" width="500">
+					</P>
+					<p>
+						Then, with the right measures, updated the design of the discs:
+					</p>
+					<P>
+						<img src="A1-assets/A1-05.jpg" alt="Measuring cardboard piece with calipers" width="500">
+					</P>
+					<p>
+						Note the original design above, and the newer with the wider spaces below.
+
+						This resulted in a new, wider spaced disc:
+					</p>
+					<P>
+						<img src="A1-assets/A1-06.jpg" alt="Measuring cardboard piece with calipers" width="500">
+					</P>
+					<p>
+							I tested the new pieces by assembling a couple. 
+					</p>
+					<P>
+						<img src="A1-assets/A1-07.jpg" alt="Two discs assembled togehter" width="500">
+					</P>
+					<p>
+							Much better -- still a bit wobbly, but hey -- they fit! 
+					</p>
+					<P>
+						<img src="A1-assets/A1-08.jpg" alt="A small structure built with the discs" width="500">
+					</P>
+					<p>
+						At this point I can either refine once more, or try to be reckless and come up with something a bit crazier.
+
+						Inspired by geodesic domes, I designed some pieces that could be used to build one:
+					</p>
+					<P>
+						<img src="A1-assets/A1-09.jpg" alt="Illustrator file with the multiple pieces outlined" width="500">
+					</P>
+					<p>
+						Then I created a pattern to easily cut the pieces:
+					</p>
+					<P>
+						<img src="A1-assets/A1-10.jpg" alt="Illustrator file with the multiple pieces outlined" width="500">
+					</P>
+
+					<p>
+						After an initial run, I realized the pieces were too small to comfortably handle, so I decided to make them a tad bigger (while maintaining the same width for the incisions to assemble them. 
+					</p>
+					<P>
+						<img src="A1-assets/A1-11.jpg" alt="Two iteration of the pieces" width="500">
+					</P>
+					<p>
+						I then cut connecting pieces… twice because the initial batch was too small and the larger pieces clashed on each other.
+					</p>
+					<P>
+						<img src="A1-assets/A1-12.jpg" alt="Laser cutter cutting connector pieces" width="500">
+					</P>
+					<p>
+						Unfortunately, over a third of the connectors fell through the laser cutter bed -- note to self: embiggen everything!
+
+						The ones that made it, worked quite well: 
+					</p>
+					<P>
+						<img src="A1-assets/A1-13.jpg" alt="A small structure built with the discs" width="500">
+					</P>
+					<p>		
+						And eventually, I got to this:
+					</p>
+					<P>
+						<img src="A1-assets/A1-14.jpg" alt="A small structure built with the discs" width="500">
+					</P>
+					<p>		
+						After I completed this shape, I realized that real 2V geodesic domes have two sizes of pieces, and not just one. 
+						
+						In general, I'm satisfied with the outcome of my ingenuous approach, but now realize the value of doing previous research in order to optimize the time spent designing pieces.
+					</p>
+					<p>
+						<a href="A1-assets/HCDE598-A1-PressFitPuzzle_V4.ai">Here is a link to the .AI file</a> that contains the pattern and pieces. 
+					</p>
+				</div>
+			</div>
+			
+			<div class="col">
+			</div>
+				
+		</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
