@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet"> 
+
+    <title>A5: Subtractive Fabrication and CNC milling</title>
+  </head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="./">UW HCDE598 SP19 Assignments</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav">
+						<!-- <a class="nav-item nav-link active" href="./">Home <span class="sr-only">(current)</span></a> -->
+						<a class="nav-item nav-link" href="A1.html">A1: Laser Cut Press Fit Construction Kit</a>
+						<a class="nav-item nav-link" href="A2.html">A2: CAD model + fabricated output</a>
+						<a class="nav-item nav-link" href="A3.html">A3: 3D printing + lasercutting lamp</a>
+						<a class="nav-item nav-link" href="A4.html">A4: Moving Parts</a>
+						<a class="nav-item nav-link" href="A5.html">A5: Subtractive Fabrication and CNC milling</a>
+						<a class="nav-item nav-link" href="A6.html">A6: TBD</a>
+						<a class="nav-item nav-link" href="A7.html">A7: TBD</a>
+						<!-- <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+				  	</div>
+				</div>
+		</nav>
+		<div class="row">
+			<div class="col">
+			</div>
+
+			<div class="col-9">
+				<div class="display-1">
+				  <p style="font-family: 'Abril Fatface', cursive;">A5: Subtractive Fabrication and CNC milling</p>
+				</div>
+<div id="content">
+
+	<p>Time to box all these feelings up... in a CNC milled box.</p>
+	<p>I spend all of this week in work-related travel, so with a compressed timeline, I optimized heavily for fabrication and materials.</p>
+	<p>My box would be as simple as possible -- to the point where the entire box can be made using <strong>a single part</strong> fabricated six times.</p>
+	<p>Unfortunately, I relied on <a href="https://en.wikipedia.org/wiki/Butt_joint">butt joints</a>, that are quite unreliable, but at least they were something that could be milled and assembled quickly.</p>
+	
+	<p>The initial sketches focused on a part that would fit multiple times</p>
+	<p><img src="A5-assets/A5_00.jpg" alt="OneNote sketches for the part that would be used for the box"></p>
+	<p>To plan for the edges I measured the FR1 to ensure the joints would work well together.</p>
+	<p><img src="A5-assets/A5_07.jpg" alt="Measuring FR1 with callipers - 1.5mm thick"></p>
+	<p>I then created the actual part -- starting with a 5 centimeter square, that I later changed to 4cm (to optimize for material) because each FR1 board was 7cm * 10cm -- this would allow me to do 2x parts per FR1 board. </p>
+	<p><img src="A5-assets/A5_01.jpg" alt="OnShape sketch for the part"></p>
+	<p>After extruding the part for the 1.5mm that the FR1 measured, I had the main part for the box.</p>
+	<p><img src="A5-assets/A5_02.jpg" alt="OnShape sketch for the part"></p>
+	<p>Before manufacturing, I verified that the part actually worked.</p>
+	<p><img src="A5-assets/A5_03.jpg" alt="OnShape assembly of multiple parts to form the box"></p>
+	<p>It did!</p>
+	<p><img src="A5-assets/A5_04.jpg" alt="OnShape assembly of multiple parts to form the box"></p>
+	<p>I exported the DXF into KiCad to create a Gerber file.</p>
+	<p><img src="A5-assets/A5_05.jpg" alt="KiCad app with exported DXF"></p>
+	<p>I imported the Gerber file into Bantam Tools, which looked right.</p>
+	<p><img src="A5-assets/A5_06.jpg" alt="Bantam tools screenshot with part outline"></p>
+	<p>Once at the Mill, I followed the recommended instructions to prep the job -- e.g. creating the FR1 sandwich and using double-sided tape. I then entered the resulting measures in Bantam Tools.</p>
+	<p><img src="A5-assets/A5_08.jpg" alt="Bantam tools settings for milling the part out of FR1"></p>
+	<p>And off it went:</p>
+	<p><img src="A5-assets/A5_09.jpg" alt="Othermill milling the FR1"></p>
+	<p>
+	  	<video controls>
+			<source src="A5-assets/A5_10.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video> 
+	</p>
+	<p>The outcome of the milling was pretty nice.</p>
+	<p><img src="A5-assets/A5_11.jpg" alt="Milled pieces"></p>
+	<p>After some light assembly</p>
+	<p><img src="A5-assets/A5_12.jpg" alt="Box sides put together"></p>
+	<p>Added more sides:</p>
+	<p><img src="A5-assets/A5_13.jpg" alt="Box sides put together"></p>
+	<p><img src="A5-assets/A5_14.jpg" alt="Box sides put together"></p>
+	<p>The final box resting fully assembled with all the sides holding up.</p>
+	<p><img src="A5-assets/A5_15.jpg" alt="Completed assembled box"></p>
+	<p>The box fit really well, but needed some careful touch to stay assembled.</p>
+	<p><iframe src="https://giphy.com/embed/Ty6dsAaERhyWA" width="480" height="199" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><br />The floor is lava lvl:CIA vault... or me assembling my box using crappy butt joints.</p>
+	<p>Note to self: <strong>BUTT JOINTS SUCK</strong> (for this assignment).</p>
+	<p>&nbsp;</p>
+	<p>Source files for the box:</p>
+	<ul>
+		<li><a href="https://cad.onshape.com/documents/222973a60d8e25cc8b98b852/w/d74695712ef90855e5c46c1c/e/92e5096f72b652db4a353c7c">OnShape part for the box sides</a></li>
+		<li><a href="A5-assets/Part Studio - Side2 - 40mm.dxf">DXF: 40mm part</a></li>
+		<li><a href="A5-assets/KiCad-BoxProject-Edge_Cuts.gbr">Gerber code: Milling part</a></li>
+	</uL><br>
+</p>
+
+			  </div>
+			</div>
+			
+			<div class="col">
+			</div>
+				
+		</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
