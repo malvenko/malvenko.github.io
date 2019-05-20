@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet"> 
+
+    <title>A6: Molding and casting</title>
+  </head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="./">UW HCDE598 SP19 Assignments</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav">
+						<!-- <a class="nav-item nav-link active" href="./">Home <span class="sr-only">(current)</span></a> -->
+						<a class="nav-item nav-link" href="A1.html">A1: Laser Cut Press Fit Construction Kit</a>
+						<a class="nav-item nav-link" href="A2.html">A2: CAD model + fabricated output</a>
+						<a class="nav-item nav-link" href="A3.html">A3: 3D printing + lasercutting lamp</a>
+						<a class="nav-item nav-link" href="A4.html">A4: Moving Parts</a>
+						<a class="nav-item nav-link" href="A5.html">A5: Subtractive Fabrication and CNC milling</a>
+						<a class="nav-item nav-link" href="A6.html">A6: Molding and Casting</a>
+						<a class="nav-item nav-link" href="A7.html">A7: Final Project Proposal</a>
+						<a class="nav-item nav-link" href="A8.html">A8: Final Project</a>
+						<!-- <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+				  	</div>
+				</div>
+		</nav>
+		<div class="row">
+			<div class="col">
+			</div>
+
+			<div class="col-9">
+				<div class="display-1">
+				  <p style="font-family: 'Abril Fatface', cursive;">A6: Molding and Casting - TriangLego</p>
+				</div>
+<div id="content">
+  <p><strong>TL;DR</strong>: Milled something, created a mold of said something, casted copies of the something using the mold. </p>
+  <p>Lego pieces are amazing -- unfortunately, there are no individual triangular pieces with three connectors, so it might be interesting to come up with an interpretation of what said piece would be like, to then mill it out of wax, and create plaster copies of it.</p>
+ 
+
+	<p>I started working on potential ways to create a triangular piece, so spent quite a bit of time on exploring the sizing starting with a regular 2x2 piece.</p>
+	<p><img src="A6-assets/A6_01.jpg" alt="OnShape sketch for a 2x2 lego brick"><br />OnShape sketch for a 2x2 lego brick</p>
+	<p><img src="A6-assets/A6_02.jpg" alt="Extruded sketch for a 2x2 lego brick"><br />Extruded sketch for a 2x2 lego brick</p>
+	<p><img src="A6-assets/A6_03.jpg" alt="OnShape sketch for a 2x2 lego brick with overlaid triangle"><br /> Trying to play with a triangle shape</p>
+	<p><img src="A6-assets/A6_04.jpg" alt="OnShape sketch for a 2x2 lego brick with overlaid triangle and hexagon"><br />Maybe I need to chop the triangle with a hexagon to make it a truncated hexagon</p>
+	<p><img src="A6-assets/A6_05.jpg" alt="OnShape sketch for a 2x2 lego brick"><br /> Experimenting with the connector placement</p>
+	<p>After struggling a bit with the possible ways to make this fit an actual lego set, I decided to explore the internet to see other approaches (I realized there would be zero ROI if I spent any longer working on my own implementation).</p>
+  <p>There was a great model that might probably not fit a Lego set, but aligned nicely to the ideas I was exploring and would be perfect for this assignment in <a href="https://3dwarehouse.sketchup.com/model/2800970182cb5da38086d19e9d324e44/Hexagon-Lego-1x2-Triangle">SketchUp's 3D Warehouse</a></p>
+  <p><iframe src="https://3dwarehouse.sketchup.com/embed/2800970182cb5da38086d19e9d324e44" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="580" height="326" allowfullscreen></iframe></p>
+  <p>After <strike>stealing</strike> downloading the SketchUp file, I converted to STL, and imported into <a href="https://www.autodesk.com/products/fusion-360/students-teachers-educators">Fusion 360</a>.</p>
+  <p><img src="A6-assets/A6_08.jpg" alt="STL for the triangular lego imported into Fusion 360"><br>STL for the triangular lego imported into Fusion 360</p>
+  <p>I started to play around with adding a stock directly in Fusion 360 that would represent the machinable wax</p>
+  <p><img src="A6-assets/A6_09.jpg" alt="Model showing the lego inside to the machinable wax stock"><br>Model showing the lego inside to the machinable wax stock</p>
+  <p>I started simulating the process of milling the stock to get the part</p>
+  <p><img src="A6-assets/A6_10.jpg" alt="Model showing the lego inside to the machinable wax stock"><br>Model showing the lego inside to the machinable wax stock</p>
+	<p>
+  	  <video controls>
+			<source src="A6-assets/A6_SIM.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+	  </video> 
+	</p>
+	<p>With the toolpaths ready, I exported to GCode</p>
+  <p><img src="A6-assets/A6_11.jpg" alt="Model showing the toolpaths"></p>
+  <p>I then realized that the stock was unnecessarily huge, so I'd deal with it directly on Bantam Tools. I adjusted the stock to be slightly larger than the Lego object.</p>
+	<p><img src="A6-assets/A6_12.jpg" alt="Model showing the lego inside a slightly larger stock"></p>
+	<p><img src="A6-assets/A6_13.jpg" alt="Bantam Tools UI with the model inside"></p>
+  <p><strong>WAX TIME!</strong></p>
+	<p><iframe src="https://giphy.com/embed/j9ayvgTlphafe" width="480" height="277" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></p>
+	<p>At this point several things happened:</p>
+	<p>
+		<ol>
+			<li>I had to get machinable wax at the <a href="https://comotion.uw.edu/">CoMotiuon</a> space at UW.</li>
+			<li>The machinable wax we used for the class did not fit the Othermill <br>
+			</li>
+		</ol>
+	</p>
+	<p><img src="A6-assets/A6_14.jpg" alt="Model showing the lego inside a slightly larger stock"></p>
+	
+	<p><img src="A5-assets/A5_07.jpg" alt="Measuring FR1 with callipers - 1.5mm thick"></p>
+	<p>I then created the actual part -- starting with a 5 centimeter square, that I later changed to 4cm (to optimize for material) because each FR1 board was 7cm * 10cm -- this would allow me to do 2x parts per FR1 board. </p>
+	<p><img src="A5-assets/A5_01.jpg" alt="OnShape sketch for the part"></p>
+	<p>After extruding the part for the 1.5mm that the FR1 measured, I had the main part for the box.</p>
+	<p><img src="A5-assets/A5_02.jpg" alt="OnShape sketch for the part"></p>
+	<p>Before manufacturing, I verified that the part actually worked.</p>
+	<p><img src="A5-assets/A5_03.jpg" alt="OnShape assembly of multiple parts to form the box"></p>
+	<p>It did!</p>
+	<p><img src="A5-assets/A5_04.jpg" alt="OnShape assembly of multiple parts to form the box"></p>
+	<p>I exported the DXF into KiCad to create a Gerber file.</p>
+	<p><img src="A5-assets/A5_05.jpg" alt="KiCad app with exported DXF"></p>
+	<p>I imported the Gerber file into Bantam Tools, which looked right.</p>
+	<p><img src="A5-assets/A5_06.jpg" alt="Bantam tools screenshot with part outline"></p>
+	<p>Once at the Mill, I followed the recommended instructions to prep the job -- e.g. creating the FR1 sandwich and using double-sided tape. I then entered the resulting measures in Bantam Tools.</p>
+	<p><img src="A5-assets/A5_08.jpg" alt="Bantam tools settings for milling the part out of FR1"></p>
+	<p>And off it went:</p>
+	<p><img src="A5-assets/A5_09.jpg" alt="Othermill milling the FR1"></p>
+	<p>
+  	  <video controls>
+			<source src="A5-assets/A5_10.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+	  </video> 
+	</p>
+	<p>The outcome of the milling was pretty nice.</p>
+	<p><img src="A5-assets/A5_11.jpg" alt="Milled pieces"></p>
+	<p>After some light assembly</p>
+	<p><img src="A5-assets/A5_12.jpg" alt="Box sides put together"></p>
+	<p>Added more sides:</p>
+	<p><img src="A5-assets/A5_13.jpg" alt="Box sides put together"></p>
+	<p><img src="A5-assets/A5_14.jpg" alt="Box sides put together"></p>
+	<p>The final box resting fully assembled with all the sides holding up.</p>
+	<p><img src="A5-assets/A5_15.jpg" alt="Completed assembled box"></p>
+	<p>The box fit really well, but needed some careful touch to stay assembled.</p>
+	<p><iframe src="https://giphy.com/embed/Ty6dsAaERhyWA" width="480" height="199" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><br />The floor is lava lvl:CIA vault... or me assembling my box using crappy butt joints.</p>
+	<p>Note to self: <strong>BUTT JOINTS SUCK</strong> (for this assignment).</p>
+	<p>&nbsp;</p>
+	<p>Source files for the box:</p>
+	<ul>
+		<li><a href="https://cad.onshape.com/documents/222973a60d8e25cc8b98b852/w/d74695712ef90855e5c46c1c/e/92e5096f72b652db4a353c7c">OnShape part for the box sides</a></li>
+		<li><a href="A5-assets/Part Studio - Side2 - 40mm.dxf">DXF: 40mm part</a></li>
+		<li><a href="A5-assets/KiCad-BoxProject-Edge_Cuts.gbr">Gerber code: Milling part</a></li>
+	</uL><br>
+</p>
+
+			  </div>
+			</div>
+			
+			<div class="col">
+			</div>
+				
+		</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
