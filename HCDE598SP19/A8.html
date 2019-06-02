@@ -59,26 +59,64 @@
 	<p><img src="A8-assets/A8-05.jpg"><br>At some point I also started thinking about the 3D printing setup -- I think the most efficient way to print this is vertically, so that the need for supports is minimized.</p>
 	<h2>CAD DESIGN</h2>
 	<p>After I had the initial sketches done-ish, I started designing the components in onshape</p>
-	<p><img src="A8-assets/A8-06OnShapePre.jpg"><br />This was relatively straight forward because of the math I had done in the past.</p>
-	<p>With a bunch of parts ready to assemble, I put them together in the Assembly section:</p>
-	<p><img src="A8-assets/A8-06.jpg"><br />I did a couple of tweaks to adjust for the math I didn't consider -- e.g. the width of the sliding door, which as shown in the image above, did not originally account for the grooves.</p>
-	<p><img src="A8-assets/A8-07.jpg"><br>After a couple of tweaks in a couple of components, the box fit together nicely.</p>
+	<p><img src="A8-assets/A8-06OnShapePre.jpg"><br />This was relatively straight forward because of all the dimensions I calculated previously in the sketches.</p>
+	<p>With a bunch of parts ready, I put them together in the Assembly section:</p>
+	<p><img src="A8-assets/A8-06.jpg"><br />I did a couple of tweaks to adjust for the dimensions I didn't consider -- e.g. the width of the sliding door, which as shown in the image above, did not originally account for the grooves.</p>
+	<p><img src="A8-assets/A8-07.jpg"><br>After a couple of tweaks on the components, the box fit together nicely.</p>
 	<p>I used an <a href="https://cad.onshape.com/documents/c9a5ab9cc17f4a71b44f9828/w/fe9439076f8347d981a9c624/e/f8117c468d9249649a3ec575">OnShape model to generate gears</a>, and tweaked it to ensure the radius fit the space I had designed in the box:</p>
 	<p><img src="A8-assets/A8-07Gear.jpg"></p>
 	<p><img>I added the rotating components and played with the shapes to ensure they would properly accomodate the rotation.</p>
-	<p><img src="A8-assets/A8-08.jpg"><br>This is the closed position.</p>
-	<p><img src="A8-assets/A8-09.jpg"><br>More math to calculate the max rotation allowed in the open position. In this position, the surprise would come near the unsuspecting user.</p>
+	<p><img src="A8-assets/A8-08.jpg"><br>Closed position.</p>
+	<p><img src="A8-assets/A8-09.jpg"><br>Open position, with the max rotation allowed. In this position, the surprise would come near the unsuspecting user's fingers.</p>
 	<p><img src="A8-assets/A8-10.jpg"><br>Added the first rack and pinion to connect with the rotating mechanism.</p>
-	<p><img src="A8-assets/A8-11.jpg"><br>I also added an axis to the gear so that it would rotate in place inside a pocket in each side inside the box.</p>
+	<p><img src="A8-assets/A8-11.jpg"><br>I also added an axis to the gear so that it would rotate in place, fitted inside a pocket in each side inside of the box.</p>
 	<p><img src="A8-assets/A8-12.jpg"><br>This is a wireframe view of the rotating gear in place using the rack and pinion mechanism in the sliding door.</p>
 	<p><img src="A8-assets/A8-13.jpg"><br>Another view of the internal mechanism, with the rotating arm outside for sizing reference.</p>
-	<p><img src="A8-assets/A8-17.jpg"><br />Did a bit of math to calculate the size of the grooves for the sliding door.</p>
-	<p><img src="A8-assets/A8-14.jpg"><br />Did a bit of math to calculate the size of the grooves for the sliding door.</p>
-	<p><img src="A8-assets/A8-18.jpg"><br />Did a bit of math to calculate the size of the grooves for the sliding door.</p>
-	<p><img src="A8-assets/A8-20.jpg"><br />Did a bit of math to calculate the size of the grooves for the sliding door.</p>
-	<p><img src="A8-assets/A8-21.jpg"><br />Did a bit of math to calculate the size of the grooves for the sliding door.</p>
-	<p><img src="A8-assets/A8-22.jpg"><br />Did a bit of math to calculate the size of the grooves for the sliding door.</p>
-	<p><img src="A8-assets/A8-23.jpg"><br />Did a bit of math to calculate the size of the grooves for the sliding door.</p>
+	<h2>MANUFACTURING</h2>
+	<p>After designing the components, the three main manufacturing processes would be:</p>
+	<ul>
+		<li>3D Print the gear for the rotating component</li>
+		<li>Laser cut the box sides and a component of the rotating mechanism</li>
+		<li>Mill the sides of the box for the pocket of the rotating mechanism and the grooves for the sliding cover</li>
+	</ul>
+	<h3>3D PRINTING</h3>
+	<p>Given time constraints, I did most of the work at the <a href="https://www.microsoft.com/en-us/garage/">Microsoft Garage</a> marker space. It's a sweet space with laser cutters, 3D printers, an Othermill, and a bunch of other tools to build almost anything.</p>
+	<p>I started using a Flashforge Pro to print the gear with somewhat unsuccessful results:</p>
+	<p><img src="A8-assets/A8-17.jpg"><br />Reminds me of the Ghostbusters' <a href="https://ghostbusters.fandom.com/wiki/Psychomagnotheric_Slime">Psychomagnotheric Slime</a>.</p>
+	<p>I turned to the Ultimaker 3, and after starting the print, I noticed some problems with the machine:</p>
+	<p><img src="A8-assets/A8-14.jpg"><br />The machine was still operable, but needed careful observation to stop it in case the material leaked or if anything else behaved strange.</p>
+	<p>
+		<video controls>
+			<source src="A8-assets/A8-18.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video> 
+	</p>
+	<p>The printing completed after ~1h.</p>
+	<p><img src="A8-assets/A8-20.jpg"></p>
+	<p>After the parts were done, the results were noticeably different:</p>
+	<p><img src="A8-assets/A8-16.jpg"></p>
+	<h3>Laser Cutting</h3>
+	<p>After the printing was done, I cut the parts </p>
+	<p>The settings of the Epilog laser cutter/engraver were:</p>
+	<ul>
+		<li>Power 100%</li>
+		<li>Speed 20</li>
+	</ul>
+	<p>These settings were based on some pre-set recommendations from other Microsoft Garage members.</p>
+	<p>
+	<video controls>
+			<source src="A8-assets/A8-21.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video> 
+	</p>
+	<p>Since I knew I would have limited access to the laser cutter, I cut a couple of different options for the following parts:</p>
+	<ul>
+		<li>Box sides -- in case I needed to mill extra parts if I did not mill it properly</li>
+		<li>Sliding box covers -- from previous experience, the acrylic might melt slightly differently, and there was a possibility that the sliding cover might not fit properly</li>
+		<li>Extra parts for the rotating mechanism in case I needed to cut the final version to adapt for any tight tolerances.</li>
+	</ul>
+	<p><img src="A8-assets/A8-22.jpg"><br />Sliding doors in a variety of widths -- from 3.1 cm to 3.4 cm.</p>
+	<p><img src="A8-assets/A8-23.jpg"><br />Parts for the rack and pinion mechanism.</p>
 	
 	
 	<p></p>
